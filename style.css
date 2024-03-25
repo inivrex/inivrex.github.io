@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    background-color: darkblue;
+    font: caption;
+    font-family: monospace;
+}
+
+nav {
+    background: rgb(0, 0, 255);
+    width: 100%;
+    height: 2rem;
+    color: rgba(235, 235, 235, 0.855);
+    text-transform: capitalize;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+nav h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+#MWin {
+    background-color: blue;
+    width: 30rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.766), 0px 0px 30px 20px rgb(3, 54, 222) inset;
+    overflow: hidden;
+    border: 5px dotted rgb(18, 255, 247);
+}
+
+#SpaceAlrt {
+    position: absolute;
+    font-size: 3.5rem;
+    top: 30%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    animation: BlinkSpace 0.4s 0s both ease-in-out alternate infinite;
+}
+
+@keyframes BlinkSpace {
+    from {
+        color: rgba(255, 0, 0, 0);
+    }
+
+    to {
+        color: rgb(106, 153, 255);
+    }
+}
+
+.FallWord {
+    color: #bdbdbd;
+    position: absolute;
+    top: -5rem;
+    font-size: 1.1rem;
+    animation: fallinW 18s 0s linear 1 both;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    user-select: none;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    z-index: 12;
+    align-items: center;
+}
+
+/* Animation for falling word  */
+@keyframes fallinW {
+    0% {
+        top: -1rem;
+    }
+
+    95% {
+        top: 30rem;
+        opacity: 1;
+
+    }
+
+    100% {
+        top: 30rem;
+        opacity: 0;
+    }
+}
+
+/* Predefined Class for other position falling words  */
+.Left0 {
+    right: 10%;
+}
+
+.Left1 {
+    right: 20%;
+}
+
+.Left2 {
+    right: 30%;
+}
+
+.Left3 {
+    right: 40%;
+}
+
+.Left4 {
+    right: 50%;
+}
+
+.Left5 {
+    right: 60%;
+}
+
+.Left6 {
+    right: 70%;
+}
+
+.Left7 {
+    right: 75%;
+}
+
+
+/* Details Section bottom of the main window */
+#details {
+    background-color: rgb(38, 117, 186);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+    margin-top: auto;
+    border-top: 5px dotted rgb(18, 255, 247);
+    flex-wrap: wrap;
+}
+
+.textDet {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0rem 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: 500; */
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.InformationDet {
+    color: white;
+    font-size: 1.2rem;
+    width: auto;
+    text-transform: lowercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+#Result {
+    background-color: rgba(0, 0, 0, 0.682);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    padding: 3rem;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+#resultDet {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    text-align: justify;
+    width: 80%;
+}
+
+.GameName {
+    color: rgb(239, 255, 67);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#Introduction {
+    background-color: rgba(255, 0, 0, 0.216);
+    color: white;
+    font-size: 1.1rem;
+    width: 30rem;
+    margin: auto;
+    padding: 1rem;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    color: white;
+    background-color: red;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
