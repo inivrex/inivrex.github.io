@@ -23,6 +23,7 @@
 
 body {
     background-color: blueviolet;
+    height: 150vh;
 }
 
 /* Navigation bar section  */
@@ -71,4 +72,18 @@ nav>ul>li {
     font-size: var(--navLinkFontSze);
     color: white;
     margin: auto 0.4rem;
+}
+
+footer{
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: caption;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    padding: auto 0.4rem;
 }
