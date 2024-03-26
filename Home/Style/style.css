@@ -75,7 +75,6 @@ nav>ul>li {
 }
 
 footer{
-    margin-top: auto;
     width: 100%;
     height: auto;
     display: flex;
@@ -86,4 +85,5 @@ footer{
     color: white;
     background-color: black;
     padding: auto 0.4rem;
+    margin-top: 100%;
 }
