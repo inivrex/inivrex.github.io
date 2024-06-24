@@ -56,7 +56,7 @@ for (let i = 0; i < navlinks.length; i++) {
 };
 
 //Setting Images for Web Projects
-let ProImgLinksArr = ['Files/BorderMovingAnimation.png', 'Files/LoadingEffect2.png', 'Files/LoadingEffect3.png', 'Files/ContactUs.png', 'Files/FillingColorEffects.png'];
+let ProImgLinksArr = ['https://inivrex.in/Files/BorderMovingAnimation.png', 'https://inivrex.in/Files/LoadingEffect2.png', 'https://inivrex.in/Files/LoadingEffect3.png', 'https://inivrex.in/Files/ContactUs.png', 'https://inivrex.in/Files/FillingColorEffects.png'];
 let imgDesProArr = ["Border Moving Animation", "Loading Effect 2", "Loading Effect 3", "Contact us form", "Filling Color Effects"];
 let ProImgLinks = document.getElementsByClassName("ProImgLinks");
 let imgDesPro = document.getElementsByClassName("imgDesPro");
