@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://inivrex.in/</loc>
+        <loc>https://www.inivrex.in/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/services/</loc>
+        <loc>https://www.inivrex.in/services/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/blogs/</loc>
+        <loc>https://www.inivrex.in/blogs/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/contact/</loc>
+        <loc>https://www.inivrex.in/contact/</loc>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/privacy-policy/</loc>
+        <loc>https://www.inivrex.in/privacy-policy/</loc>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/terms-conditions/</loc>
+        <loc>https://www.inivrex.in/terms-conditions/</loc>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/customer-guidelines/</loc>
+        <loc>https://www.inivrex.in/customer-guidelines/</loc>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/feedback/</loc>
+        <loc>https://www.inivrex.in/feedback/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/return-policy/</loc>
+        <loc>https://www.inivrex.in/return-policy/</loc>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/payment-methods/</loc>
+        <loc>https://www.inivrex.in/payment-methods/</loc>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://inivrex.in/projects/</loc>
+        <loc>https://www.inivrex.in/projects/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
