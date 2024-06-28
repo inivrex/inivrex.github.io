@@ -372,8 +372,8 @@ section {
     border: none;
     outline: none;
     font: caption;
-    font-size: var(--navLinkFontSze);
-    border-radius: 3rem;
+    /* font-size: var(--navLinkFontSze); */
+    border-radius: 5px;
     font-family: "Oswald", sans-serif;
     cursor: pointer;
     text-decoration: none;
@@ -381,6 +381,7 @@ section {
     transition-property: background-color transform;
     transition-duration: 0.3s;
     margin: auto 0.5rem;
+    color: black;
 }
 
 #wlcmScreen>div>div>a:nth-child(2) {
@@ -389,8 +390,8 @@ section {
     border: none;
     outline: none;
     font: caption;
-    font-size: var(--navLinkFontSze);
-    border-radius: 3rem;
+    /* font-size: var(--navLinkFontSze); */
+    border-radius: 5px;
     font-family: "Oswald", sans-serif;
     cursor: pointer;
     text-decoration: none;
@@ -398,6 +399,7 @@ section {
     transition-property: background-color transform;
     transition-duration: 0.3s;
     margin: auto 0.5rem;
+    color: black;
 }
 
 #wlcmScreen>div>div>a:nth-child(1):hover {
