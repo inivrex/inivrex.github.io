@@ -54,6 +54,7 @@
 body.no-scroll {
     overflow: hidden;
 }
+
 .userSlctNon {
     user-select: none;
 }
@@ -296,6 +297,7 @@ nav>ul>a:hover {
     font-size: var(--navLinkFontSze);
     color: var(--uniFontColor);
     margin: 0.1rem auto;
+    font-weight: bold;
 }
 
 /* The Content Section  */
@@ -448,23 +450,22 @@ section {
 }
 
 #Offerscrn>div:nth-child(2)>a {
-    color: rgb(0, 0, 0);
     font: caption;
     font-size: var(--miniHeadingFSize);
     text-transform: capitalize;
     text-decoration: none;
     width: auto;
     font-weight: 600;
-    padding: 0.4rem 0.7rem;
+    padding: 0.6rem 0.7rem;
     border-radius: 05px;
-    border: 2px solid green;
     font-size: 1rem;
-    background-color: #baffea93;
+    color: rgb(255, 255, 255);
+    background-color: #aa00ff;
 }
 
 #Offerscrn>div:nth-child(2)>a:hover {
     transition: 0.3s;
-    background-color: #baffc3;
+    background-color: #d278ff;
 }
 
 
@@ -499,6 +500,9 @@ section {
     width: 90%;
     max-width: 25rem;
     height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 #saleContent>div:nth-child(1) {
@@ -624,6 +628,7 @@ section {
     flex-wrap: wrap;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .projectCards:hover {
@@ -646,6 +651,7 @@ section {
     font-size: var(--navLinkFontSze);
     width: 90%;
     text-align: center;
+    font-weight: bold;
 }
 
 #smallProjects>a:nth-child(3) {
@@ -654,15 +660,18 @@ section {
     text-decoration: none;
     font-size: var(--navLinkFontSze);
     background-color: var(--TertiaryBG);
-    padding: 0.5rem;
+    padding: 0.6rem 0.7rem;
     border-radius: 5px;
     position: absolute;
     top: 102%;
+    color: rgb(255, 255, 255);
+    background-color: #aa00ff;
+    font-weight: 600;
     transition: 0.3s background-color;
 }
 
 #smallProjects>a:hover {
-    background-color: rgb(255, 223, 223);
+    background-color: #d278ff;
 }
 
 /* What is INIVREX section  */
@@ -916,9 +925,14 @@ section {
     font-size: var(--navLinkFontSze);
     text-decoration: none;
     background-color: var(--TertiaryBG);
-    padding: 1rem;
+    padding: 0.6rem 0.7rem;
     border-radius: 10px;
     font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: #aa00ff;
+}
+#serviceBtnForRdirct:hover {
+    background-color: #d278ff;
 }
 
 /* Ask section  */
@@ -987,6 +1001,7 @@ section {
     transition: border;
     transition-duration: 0s;
     border: 2px solid transparent;
+    border-radius: 5px;
 }
 
 .querIn::placeholder {
@@ -1010,14 +1025,16 @@ section {
     font: caption;
     color: var(--uniFontColor);
     font-size: var(--navLinkFontSze);
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 0.7rem;
     font-weight: 600;
     cursor: pointer;
     margin-top: 0.5rem;
+    color: rgb(255, 255, 255);
+    background-color: #aa00ff;
 }
 
 #queSbmtBtn:hover {
-    background-color: var(--PrimaryBG);
+    background-color: #d278ff;
 }
 
 
@@ -1103,7 +1120,7 @@ section {
 }
 
 /* Accept Windows  */
-#Acceptterm{
+#Acceptterm {
     display: none;
     justify-content: center;
     align-items: center;
@@ -1114,7 +1131,8 @@ section {
     z-index: 30;
     top: 0rem;
 }
-#TermWin{
+
+#TermWin {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1125,11 +1143,13 @@ section {
     padding: 1rem;
     box-shadow: -10px 10px 10px 0px rgba(255, 255, 255, 0.142);
 }
-#TermWin>div{
+
+#TermWin>div {
     display: flex;
     justify-content: center;
 }
-.agreementBtns{
+
+.agreementBtns {
     font: caption;
     font-size: var(--navLinkFontSze);
     color: black;
@@ -1140,40 +1160,4 @@ section {
     margin: 0rem 0.5rem;
     cursor: pointer;
     border: none;
-}
-
-/* Footer of the web page  */
-footer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font: caption;
-    font-size: var(--navLinkFontSze);
-    color: white;
-    background-color: black;
-    padding: 0.4rem 0.4rem;
-    flex-direction: column;
-}
-
-#FootLinks {
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1rem 0rem;
-    margin-top: 0;
-}
-
-.FootLinks {
-    color: var(--UniWhiteColor);
-    font: caption;
-    font-size: var(--navLinkFontSze);
-    text-decoration: none;
-    margin: 0.3rem 0.6rem;
-
 }

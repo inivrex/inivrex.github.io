@@ -1,0 +1,98 @@
+
+/* Footer of the web page  */
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: caption;
+    font-size: var(--navLinkFontSze);
+    color: white;
+    background-color: black;
+    padding: 0.4rem 0.4rem;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+#FootLinks {
+    padding: 1rem 0rem;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding-left: 2%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.57);
+
+}
+.footCards{
+    width: auto;
+    height: auto;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#FootCard1{
+    max-width: 20rem;
+    width: 100%;
+    transition: 0s;
+    margin-bottom: auto;
+}
+#FootCard1>p:nth-child(1){
+    margin-bottom: 1rem;
+    width: 100%;
+}
+#FootCard1>p:nth-child(2){
+    margin-bottom: 2rem;
+    width: auto;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+#FootCard2{
+    width: 50%;
+    max-width: 10rem;
+}
+#FootCard2>p{
+    font: caption;
+    font-size: var(--navLinkFontSze);
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.linksFoot{
+    font: caption;
+    font-size: var(--navLinkFontSze);
+    color: white;
+    text-decoration: none;
+    margin: 0.2rem 0rem;
+    width: 100%;
+}
+#FootCard3{
+    width: 50%;
+    max-width: 10rem;
+}
+#FootCard3>p{
+    font: caption;
+    font-size: var(--navLinkFontSze);
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+}
+.linksFoot{
+    font: caption;
+    font-size: var(--navLinkFontSze);
+    color: white;
+    text-decoration: none;
+    margin: 0.2rem 0rem;
+    width: 100%;
+}
