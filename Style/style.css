@@ -297,7 +297,6 @@ nav>ul>a:hover {
     font-size: var(--navLinkFontSze);
     color: var(--uniFontColor);
     margin: 0.1rem auto;
-    font-weight: bold;
 }
 
 /* The Content Section  */
@@ -1148,12 +1147,12 @@ section {
     display: flex;
     justify-content: center;
 }
-
-.agreementBtns {
+.agreementBtns{
     font: caption;
     font-size: var(--navLinkFontSze);
-    color: black;
-    background-color: rgb(203, 255, 126);
+    color: rgb(255, 255, 255);
+    background-color: #aa00ff;
+    font-weight: bold;
     border-radius: 10px;
     padding: 0.4rem 0.6rem;
     outline: none;
