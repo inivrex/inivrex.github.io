@@ -2,11 +2,18 @@
 const smallProjects = document.getElementById("smallProjects");
 const NavMoreLnkBtn = document.getElementById("NavMoreLnkBtn");
 const MoreNavWin = document.getElementById("MoreNavWin");
+const AFterSub = document.getElementById("AFterSub");
 const MoreNavMWin = document.getElementById("MoreNavMWin");
 const dateIn = document.getElementById("dateIn");
 const TimeIn = document.getElementById("TimeIn");
+const formParent = document.getElementById("formParent");
+const FilThisFormHead = document.getElementById("FilThisFormHead");
+const plansSectionPrnt = document.getElementById("plansSectionPrnt");
+const ThnkSubCusOrder = document.getElementById('ThnkSubCusOrder');
 const section = document.querySelector("section");
 const navlinks = document.getElementsByClassName("navlinks");
+const hiddenExtra = document.getElementsByClassName("hiddenExtra");
+const LoadingWin = document.getElementById('LoadingWin');
 
 
 section.addEventListener("click", () => {
@@ -29,24 +36,7 @@ NavMoreLnkBtn.addEventListener("click", () => {
         MoreNavWin.style.height = "0rem";
     }
 })
-function changeTime() {
-    let Fulldate = new Date;
-    let date = Fulldate.getDate();
-    let month = Fulldate.getMonth() + 1;
-    let year = Fulldate.getFullYear();
-    let hours = Fulldate.getHours();
-    let minutes = Fulldate.getMinutes();
-    let seconds = Fulldate.getSeconds();
-    let FinalDate = `${date}-${month}-${year}`;
-    let FinalTime = `${hours}-${minutes}-${seconds}`;
-    dateIn.value = FinalDate;
-    TimeIn.value = FinalTime;
-}
 
-//Adding Date and time when someone submit query.
-setInterval(() => {
-    changeTime();
-}, 1000);
 //Remove the id name from url when someone click on nav links
 
 for (let i = 0; i < navlinks.length; i++) {
@@ -55,36 +45,29 @@ for (let i = 0; i < navlinks.length; i++) {
     });
 };
 
-//Setting Images for Web Projects
-let ProImgLinksArr = ['https://inivrex.in/Files/BorderMovingAnimation.png', 'https://inivrex.in/Files/LoadingEffect2.png', 'https://inivrex.in/Files/LoadingEffect3.png', 'https://inivrex.in/Files/ContactUs.png', 'https://inivrex.in/Files/FillingColorEffects.png'];
-let imgDesProArr = ["Border Moving Animation", "Loading Effect 2", "Loading Effect 3", "Contact us form", "Filling Color Effects"];
-let ProImgLinks = document.getElementsByClassName("ProImgLinks");
-let imgDesPro = document.getElementsByClassName("imgDesPro");
-for (let i = 0; i < ProImgLinks.length; i++) {
-    ProImgLinks[i].setAttribute("src", ProImgLinksArr[i]);
-    imgDesPro[i].textContent += imgDesProArr[i];
-}
+
 
 // Scroll Navigation Show 
-window.addEventListener('scroll', function () {
+// window.addEventListener('scroll', function () {
 
-    MoreNavMWin.style.display = "none";
-    MoreNavWin.style.height = "0rem";
-    var navbar = document.querySelector('nav');
-    var navbarHeight = navbar.offsetHeight;
+//     MoreNavMWin.style.display = "none";
+//     MoreNavWin.style.height = "0rem";
+//     var navbar = document.querySelector('nav');
+//     var navbarHeight = navbar.offsetHeight;
 
-    if (window.pageYOffset >= navbarHeight + 200) {
-        navbar.classList.add('fixed');
-        MoreNavWin.style.position = 'fixed';
-        MoreNavWin.style.top = '3.7rem';
-        document.body.style.marginTop = '8rem';
-    } else {
-        navbar.classList.remove('fixed');
-        MoreNavWin.style.position = 'absolute';
-        document.body.style.marginTop = '0rem';
-        document.body.style.transition = '0s';
-    }
-});
+//     if (window.pageYOffset >= navbarHeight + 100) {
+//         navbar.classList.add('fixed');
+//         MoreNavWin.style.position = 'fixed';
+//         MoreNavWin.style.zIndex = '120';
+//         MoreNavWin.style.top = '3.7rem';
+//         document.body.style.marginTop = '8rem';
+//     } else {
+//         navbar.classList.remove('fixed');
+//         MoreNavWin.style.position = 'absolute';
+//         document.body.style.marginTop = '0rem';
+//         document.body.style.transition = '0s';
+//     }
+// });
 
 
 //Move effect 
@@ -102,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Reset elements if scroll offset is 0
-        if (scrollTop === 0) {
+        if (scrollTop === 1) {
             elements.forEach(function (element) {
                 element.classList.remove('visible');
                 // Trigger reflow to restart animation
@@ -118,38 +101,55 @@ document.addEventListener('DOMContentLoaded', function () {
     checkVisibility();
 });
 
+// Function to show dialog and return a promise
+let DiaBtns = document.getElementsByClassName("DiaBtns");
+function showDialogue(diaText, btn1Text = 'Cancel', btn2Text = 'Ok') {
+    // Set dialog text and button texts
+    document.getElementById("Dialoguetext").innerText = diaText;
+    document.getElementById("button1Text").innerText = btn1Text;
+    document.getElementById("button2Text").innerText = btn2Text;
 
-// Accept Window For New User 
-document.addEventListener("DOMContentLoaded", function () {
-    const termWindow = document.getElementById('Acceptterm');
-    const agreeBtn = termWindow.querySelector('.agreementBtns:nth-child(2)');
-    const disagreeBtn = termWindow.querySelector('.agreementBtns:nth-child(1)');
-
-    function showTermsWindow() {
-        termWindow.style.display = 'flex';
+    // Show dialog
+    dialogueBoxPrnt.style.display = "flex";
+    setTimeout(() => {
+        dialogueBoxPrnt.style.opacity = '1';
+        mainWindDialo.style.opacity = '1';
+        mainWindDialo.style.transform = 'scale(1)';
         document.body.classList.add('no-scroll');
-    }
+    }, 50);
 
-    // Check if the user has already agreed
-    if (localStorage.getItem('agreedToTerms') === 'true') {
-        termWindow.style.display = 'none';
-        document.body.classList.remove('no-scroll');
-    } else {
-        // Delay showing the terms window by 10 seconds
-        setTimeout(showTermsWindow, 2000);
-    }
-
-    // When the Agree button is clicked
-    agreeBtn.addEventListener('click', function () {
-        localStorage.setItem('agreedToTerms', 'true');
-        termWindow.style.display = 'none';
-        document.body.classList.remove('no-scroll');
+    // Return a promise that resolves with the button click value
+    return new Promise((resolve) => {
+        // Add click event listeners to buttons
+        DiaBtns[0].addEventListener("click", () => {
+            resolve(false); // Button 1 clicked, return false
+            closeDialog();
+        }, { once: true });
+        DiaBtns[1].addEventListener("click", () => {
+            resolve(true); // Button 2 clicked, return true
+            closeDialog();
+        }, { once: true });
     });
+}
 
-    // When the Disagree button is clicked
-    disagreeBtn.addEventListener('click', function () {
-        localStorage.removeItem('agreedToTerms');
-        document.body.innerHTML = ''; // Clear the entire page content
-        alert("You must agree to the terms to use our website.");
-    });
-});
+// Function to close dialog
+function closeDialog() {
+    mainWindDialo.style.opacity = '0';
+    mainWindDialo.style.transform = 'scale(0.7)';
+    dialogueBoxPrnt.style.opacity = '0';
+    setTimeout(() => {
+
+        dialogueBoxPrnt.style.display = "none";
+        document.body.classList.remove('no-scroll');
+    }, 300);
+}
+
+function successfullSubDeta() {
+    LoadingWin.style.display = 'none';
+    ThnkSubCusOrder.style.display = 'flex';
+    setTimeout(() => {
+        ThnkSubCusOrder.style.display = 'none';
+        formParent.innerHTML = "";
+        document.body.classList.remove('no-scroll');
+    }, 5000);
+}
