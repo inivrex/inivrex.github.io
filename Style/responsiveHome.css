@@ -37,9 +37,19 @@
     #Offerscrn {
         padding: 0.5rem;
     }
+
     #FloatingWALink {
         width: 3.5rem;
         height: 3.5rem;
+    }
+
+    #saleContent>img {
+        width: 97%;
+        max-width: 35rem;
+    }
+
+    #Offerscrn>div:nth-child(2) {
+        margin-top: 1rem;
     }
 
     /* Finish */
@@ -197,6 +207,10 @@
     }
 
     #askque>div>form {
+        width: 100%;
+    }
+
+    #smallProjects {
         width: 100%;
     }
 }
