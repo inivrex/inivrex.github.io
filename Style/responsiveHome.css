@@ -129,6 +129,17 @@
     }
 }
 
+@media screen and (max-width: 549px) {
+    #ShortGuide {
+        height: auto;
+
+    }
+
+    .shortguideChild>img {
+        width: 8rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
     :root {
         --uniFontColor: rgb(0, 0, 0);
@@ -212,6 +223,25 @@
 
     #smallProjects {
         width: 100%;
+    }
+
+    .shortguideChild {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .shortguideChild>img {
+        width: 7.4rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #ShortGuide {
+        flex-direction: column;
+    }
+
+    .shortguideChild>img {
+        width: 10rem;
     }
 }
 

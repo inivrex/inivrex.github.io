@@ -435,12 +435,12 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin-top: 2rem;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-#Offerscrn>div:nth-child(2) {
+#Offerscrn>div>div:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,7 +449,7 @@ section {
     height: auto;
 }
 
-#Offerscrn>div:nth-child(2)>a {
+#Offerscrn>div>div:nth-child(2)>a {
     font: caption;
     font-size: var(--miniHeadingFSize);
     text-transform: capitalize;
@@ -469,7 +469,7 @@ section {
 }
 
 
-#Offerscrn>div:nth-child(1)>div {
+/* #Offerscrn>div:nth-child(1)>div {
     width: var(--ofrClckImgWid);
     height: var(--ofrClckImgWid);
     border-radius: 100%;
@@ -482,6 +482,15 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto 1rem;
+} */
+#saleContentP {
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
 }
 
 #saleContent {
@@ -580,6 +589,37 @@ section {
 
 }
 
+/* Short Guide Starts From Here  */
+#ShortGuide {
+    width: 96%;
+    max-width: 40rem;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(176, 107, 250); */
+    background: linear-gradient(45deg, #c1a6ffbb, #9983cd6a);
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;    
+    box-shadow: -10px 10px 10px 0 rgba(0, 0, 0, 0.106);
+}
+
+.shortguideChild {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: red; */
+    margin: 0 0.4rem;
+    margin-bottom: auto;
+}
+
+.shortguideChild>img {
+    width: 10rem;
+    height: auto;
+    margin-bottom: auto;
+}
 
 /* Small projects section  */
 
@@ -736,7 +776,7 @@ section {
 /* Service Proving Method Section  */
 
 #servicingDeta {
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 95%;
     max-width: 50rem;
     border: none;
@@ -793,7 +833,7 @@ section {
     padding: 1rem;
     max-width: 50rem;
     background-color: var(--SecondaryBG);
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     flex-direction: column;
 }
 
@@ -826,7 +866,7 @@ section {
     align-items: center;
     margin-top: 1rem;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 #BuyServiceSec>div {
