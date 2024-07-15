@@ -11,9 +11,9 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.inivrex.in/blogs/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://blog.inivrex.in/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.inivrex.in/contact/</loc>
@@ -53,6 +53,11 @@
     <url>
         <loc>https://www.inivrex.in/projects/</loc>
         <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.inivrex.in/work-sample/</loc>
+        <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
 </urlset>
